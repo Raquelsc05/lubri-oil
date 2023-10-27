@@ -398,6 +398,34 @@ footer .social a:hover {
   transform: translateY(-8px);
 }
 
+.float-whatsapp {
+  bottom: 80px;
+  right: 20px;
+  z-index: 999;
+  font-size: 14px;
+  margin-bottom: -3rem;
+}
+
+.float-whatsapp.float-on {
+position: fixed;
+}
+
+.float-whatsapp a {
+  background: #008617;
+  padding: 10px 20px 10px 15px;
+  border-radius: 100px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.float-whatsapp svg {
+  height: 16px;
+  margin-bottom: -2px;
+}
+
+
+
+
 /********************* RESPONSIVO ********************************/
 @media (min-width: 1200px) {
   .container {
