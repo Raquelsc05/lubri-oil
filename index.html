@@ -11,6 +11,7 @@
       src="https://kit.fontawesome.com/40fb058c8d.js"
       crossorigin="anonymous"
     ></script>
+  
 
     <link rel="stylesheet" href="style.css" />
 
@@ -19,6 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <header id="header">
@@ -40,18 +42,65 @@
     </header>
 
     <main>
-      <section class="section" id="home">
-        <div class="container grid">
-          <video 
-          controls
-          autoplay
-          muted>
-          <source src="./assets/video.mp4" type="video/mp4">
-          <source src="./assets/video-mov.mov" type="video/mov">
-          Your browser does not support the video tag.
+  <section id="home">
+    <div class="container">
+
+        <div class="slider"> <!-- Adicionar aqui a classe swiper -->
+         
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+           
+              
+            <div class="slide first">
+              <img src="./assets/model.png"
+              alt=""/>
+            </div>
+
+            <div class="slide">
+              <img src="./assets/SUN.png"
+              alt=""/>
+            </div>
+               
+            <div class="slide">
+              <img src="./assets/01.png"
+              alt=""/>
+            </div>
+               
+              <div class="slide">
+                <img src="./assets/02.png"
+                alt=""/>
+              
+              </div>
+
             
-        </video>
+
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                
+              </div>
+
+            </div>
+
+            <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+           
+            </div>
+           
+          </div>
+        </div>
      
+   
+   
+ 
        
           <div class="text">
             <h1 class="title">ESPECIALISTA EM TROCA DE ÓLEO & MECÂNICA</h1>
@@ -64,8 +113,10 @@
             </a>
           </div>
         </div>
+     
       </section>
-
+    </section>
+  
       <section class="section" id="about">
         <div class="container grid">
           <img
@@ -143,6 +194,8 @@
         </div>
       </section>
 
+   
+        
       <section class="section" id="contact" style="background: black">
         <div class="container grid">
           <div class="text-contact">
@@ -249,7 +302,7 @@
       </footer>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+   
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
